@@ -1,0 +1,16 @@
+CREATE DATABASE school_db;
+
+USE school_db;
+
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT,
+    grade CHAR(2)
+);
+
+INSERT INTO students (name, age, grade)
+VALUES
+('Alice', 14, 'A'),
+('Bob', 15, 'B'),
+('Charlie', 13, 'A');
